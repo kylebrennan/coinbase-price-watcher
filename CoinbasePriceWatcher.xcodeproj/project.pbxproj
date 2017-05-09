@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC95E0426F16753B231FC55 /* Pods_CoinbasePriceWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC065254B0069680F89A184 /* Pods_CoinbasePriceWatcher.framework */; };
 		CE49E27A1EBE4E7600F4F2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49E2791EBE4E7600F4F2B4 /* AppDelegate.swift */; };
 		CE49E27C1EBE4E7600F4F2B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49E27B1EBE4E7600F4F2B4 /* ViewController.swift */; };
 		CE49E27F1EBE4E7600F4F2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE49E27D1EBE4E7600F4F2B4 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DAD4E4AB519CA958C7DE37 /* Pods-CoinbasePriceWatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePriceWatcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinbasePriceWatcher/Pods-CoinbasePriceWatcher.debug.xcconfig"; sourceTree = "<group>"; };
+		649A0260CD761F8700614113 /* Pods-CoinbasePriceWatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinbasePriceWatcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinbasePriceWatcher/Pods-CoinbasePriceWatcher.release.xcconfig"; sourceTree = "<group>"; };
+		BBC065254B0069680F89A184 /* Pods_CoinbasePriceWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinbasePriceWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49E2761EBE4E7600F4F2B4 /* CoinbasePriceWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinbasePriceWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49E2791EBE4E7600F4F2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE49E27B1EBE4E7600F4F2B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC95E0426F16753B231FC55 /* Pods_CoinbasePriceWatcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720ED773D12656A1C41EED09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC065254B0069680F89A184 /* Pods_CoinbasePriceWatcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC1143CBBDBEC7D8D8340484 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00DAD4E4AB519CA958C7DE37 /* Pods-CoinbasePriceWatcher.debug.xcconfig */,
+				649A0260CD761F8700614113 /* Pods-CoinbasePriceWatcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE49E26D1EBE4E7600F4F2B4 = {
 			isa = PBXGroup;
 			children = (
 				CE49E2781EBE4E7600F4F2B4 /* CoinbasePriceWatcher */,
 				CE49E2771EBE4E7600F4F2B4 /* Products */,
+				BC1143CBBDBEC7D8D8340484 /* Pods */,
+				720ED773D12656A1C41EED09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE49E2881EBE4E7600F4F2B4 /* Build configuration list for PBXNativeTarget "CoinbasePriceWatcher" */;
 			buildPhases = (
+				96531C05E6CD8140207921E8 /* [CP] Check Pods Manifest.lock */,
 				CE49E2721EBE4E7600F4F2B4 /* Sources */,
 				CE49E2731EBE4E7600F4F2B4 /* Frameworks */,
 				CE49E2741EBE4E7600F4F2B4 /* Resources */,
+				F802D651DB24039F8AE04887 /* [CP] Embed Pods Frameworks */,
+				2556B24CE08B8EB026BD2F6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2556B24CE08B8EB026BD2F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinbasePriceWatcher/Pods-CoinbasePriceWatcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96531C05E6CD8140207921E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F802D651DB24039F8AE04887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinbasePriceWatcher/Pods-CoinbasePriceWatcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE49E2721EBE4E7600F4F2B4 /* Sources */ = {
@@ -258,25 +333,31 @@
 		};
 		CE49E2891EBE4E7600F4F2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DAD4E4AB519CA958C7DE37 /* Pods-CoinbasePriceWatcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoinbasePriceWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brennan.CoinbasePriceWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CE49E28A1EBE4E7600F4F2B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649A0260CD761F8700614113 /* Pods-CoinbasePriceWatcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CoinbasePriceWatcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brennan.CoinbasePriceWatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +380,7 @@
 				CE49E28A1EBE4E7600F4F2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
